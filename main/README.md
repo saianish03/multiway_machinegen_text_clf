@@ -1,5 +1,4 @@
 # Gradio UI
-<br>
 ### Deployed on Huggingface Spaces
 <br>
 * Link to access the UI - https://huggingface.co/spaces/Sansh2003/subtaskB-gradio-app
