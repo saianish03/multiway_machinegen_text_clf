@@ -8,7 +8,7 @@
 	2) Learning Rate: 2e-5
 	3) Batch Size: 16
 * Tracking all metrics using Weights and Biases Tool - found to be very useful to check if peft and quantization techniques are working on small-language models.
-* Performance on test data:
-	![plot](./clf_report.png)
-* Confusion Matrix:
-	![plot](./conf_matrix.png)
+* Performance on test data:<br>
+![plot](./clf_report.png)
+* Confusion Matrix:<br>
+![plot](./conf_matrix.png)
