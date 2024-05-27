@@ -9,7 +9,6 @@
 	3) Batch Size: 16
 * Tracking all metrics using Weights and Biases Tool - found to be very useful to check if peft and quantization techniques are working on small-language models.
 * Performance on test data:
-![alt text](https://github.com/saianish03/multiway_machinegen_text_clf/tree/main/model/clf_report.png)
-<br>
+![plot](https://github.com/saianish03/multiway_machinegen_text_clf/tree/main/model/clf_report.png)
 * Confusion Matrix:
-![alt text](https://github.com/saianish03/multiway_machinegen_text_clf/tree/main/model/conf_matrix.png)
+![plot](https://github.com/saianish03/multiway_machinegen_text_clf/tree/main/model/conf_matrix.png)
