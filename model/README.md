@@ -1,7 +1,5 @@
 # Model Used for this Multi-class classification:
-<br>
 ## Best model: roberta-large
-<br>
 * After testing multiple baseline models, roberta-large seemed to outperform all of them.
 * Acheived a validation accuracy of 99.55% and a testing accuracy of 85.12%.
 * Used a Custom Weighted Cross Entropy Loss function to fix class imbalance.
