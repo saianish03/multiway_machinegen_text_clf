@@ -16,16 +16,10 @@ Given a full-text input, this project determines the source of the content. The 
 - **Dolly** - `4`
 - **Bloomz** - `5`
 
-### Highlights
+### Model Performance
 
-- **Error Analysis**: 
-  - **Cohere vs. ChatGPT**: These models often produce outputs that have similar sentence and grammatical structures, making their distinction challenging.
-  - **ChatGPT vs. Davinci**: Both are OpenAI models with ChatGPT being a refined version of Davinci. Their responses share similarities due to their common lineage.
+Detailed performance metrics and model specifics can be found in the [Model README](model/README.md).
 
 ### Demonstration
 
 Check out the [Huggingface Spaces Gradio App](https://huggingface.co/spaces/Sansh2003/subtaskB-gradio-app) for a live demonstration of the model in action.
-
-### Model Performance
-
-Detailed performance metrics and model specifics can be found in the [Model README](model/README.md).
