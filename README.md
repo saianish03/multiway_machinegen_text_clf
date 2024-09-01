@@ -16,6 +16,8 @@ Given a full-text input, this project determines the source of the content. The 
 - **Dolly** - `4`
 - **Bloomz** - `5`
 
+This project is based on a problem statement from **SemEval 2024 - Task 8, Subtask B**. Although inspired by the competition, it was developed independently and was not submitted as part of the official contest. For more details on the original task, visit [this link](https://github.com/mbzuai-nlp/SemEval2024-task8).
+
 ### Model Performance
 
 Detailed performance metrics and model specifics can be found in the [Model README](model/README.md).
