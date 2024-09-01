@@ -28,6 +28,12 @@ We leveraged the **Weights and Biases** tool to track all key metrics, which pro
 
 ![Confusion Matrix](./conf_matrix.png)
 
+### Highlights
+
+- **Error Analysis**: 
+  - **Cohere vs. ChatGPT**: These models often produce outputs with similar sentence and grammatical structures, making their distinction challenging.
+  - **ChatGPT vs. Davinci**: Both are OpenAI models with ChatGPT being a refined version of Davinci. Their responses share similarities due to their common lineage.
+
 ---
 
 RoBERTa-large showcased its prowess in handling this complex multi-class classification task, setting a high benchmark for performance.
