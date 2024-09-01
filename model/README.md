@@ -1,14 +1,33 @@
-# Model Used for this Multi-class classification:
-## Best model: roberta-large
-* After testing multiple baseline models, roberta-large seemed to outperform all of them.
-* Acheived a validation accuracy of 99.55% and a testing accuracy of 85.12%.
-* Used a Custom Weighted Cross Entropy Loss function to fix class imbalance.
-* Hyper-Parameters used:
-	1) Epochs: 5
-	2) Learning Rate: 2e-5
-	3) Batch Size: 16
-* Tracking all metrics using Weights and Biases Tool - found to be very useful to check if peft and quantization techniques are working on small-language models.
-* Performance on test data:<br>
-	![plot](./clf_report.png)
-* Confusion Matrix:<br>
-	![plot](./conf_matrix.png)
+# Model Used for Multi-Class Classification
+
+## Best Model: RoBERTa-large
+
+After extensive testing with multiple baseline models, **RoBERTa-large** emerged as the top performer, delivering impressive results.
+
+### Key Achievements
+
+- **Validation Accuracy**: 99.55%
+- **Testing Accuracy**: 85.12%
+- **Class Imbalance**: Addressed using a custom Weighted Cross Entropy Loss function.
+
+### Hyperparameters
+
+- **Epochs**: 5
+- **Learning Rate**: 2e-5
+- **Batch Size**: 16
+
+### Model Tracking
+
+We leveraged the **Weights and Biases** tool to track all key metrics, which proved invaluable in evaluating the effectiveness of parameter-efficient fine-tuning (PEFT) and quantization techniques on smaller language models.
+
+### Performance on Test Data
+
+![Classification Report](./clf_report.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](./conf_matrix.png)
+
+---
+
+RoBERTa-large showcased its prowess in handling this complex multi-class classification task, setting a high benchmark for performance.
