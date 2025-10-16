@@ -2,9 +2,20 @@ import gradio as gr
 import pandas as pd
 from utils import get_predictions
 from datasets import load_dataset
+import warnings
+warnings.filterwarnings('ignore')
+import os 
 
+# Code will get the public ip of an instance
 
+ip = str(os.system(f'curl ipinfo.io/ip '))
+
+print(ip)
+
+print("loading data...")
 data = load_dataset("Sansh2003/subtask-b-examples-test")
+print("done")
+print()
 data = data['test']
 data = pd.DataFrame(data)
 
@@ -75,4 +86,5 @@ with gr.Blocks(theme='snehilsanyal/scikit-learn', css=css) as demo:
         example_button = gr.Button(value="Generate Example", size="sm")
         example_button.click(generate_example, outputs=[example_text, example_label])
 
-    demo.launch(share=True)
+    print("Launching app...")
+    demo.launch(server_name=ip)

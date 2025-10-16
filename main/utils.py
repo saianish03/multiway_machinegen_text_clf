@@ -3,16 +3,22 @@ import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import numpy as np
 import pandas as pd
+import warnings
+warnings.filterwarnings('ignore')
 
 MODEL_PATH = "Sansh2003/roberta-large-merged-subtaskB"
 
 id2label = {0: 'human', 1: 'chatGPT', 2: 'cohere', 3: 'davinci', 4: 'bloomz', 5: 'dolly'}
 label2id = {'human': 0, 'chatGPT': 1,'cohere': 2, 'davinci': 3, 'bloomz': 4, 'dolly': 5}
 
+
+print("loading model...")
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForSequenceClassification.from_pretrained(
     MODEL_PATH, num_labels=len(label2id), id2label=id2label, label2id=label2id
 )
+print("done")
+print()
 
 def preprocess_single_text(text, tokenizer):
     inputs = tokenizer(text, truncation=True, max_length=512, padding=True, return_tensors="pt")
